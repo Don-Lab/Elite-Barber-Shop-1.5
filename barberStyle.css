@@ -1,0 +1,471 @@
+/*CSS Barber Shop*/
+body {
+	background-color: #80716a;
+}
+/*Parallax*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+h1 {
+	text-align: center;
+	font-size: 575%;
+	color: #4A4444;
+	letter-spacing: 1%;
+	text-transform: uppercase;
+}
+h2 {
+	text-align: center;
+	font-size: 275%;
+	color: #4A4444;
+	letter-spacing: 1%;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+}
+.header {
+	background-color: #CDCDC0;
+	padding: 7px;
+}
+.paraMain {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	height: 100%;
+	background-image: url("Images/main.jpeg");
+}
+.paraSer, .paraLoc, .paraCon {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	height: 500px;
+}
+.paraSer {
+	background-image: url("Images/service.jpeg");
+}
+.paraLoc {
+	background-image: url("Images/mappp.jpg");
+}
+.paraCon {
+	background-image: url("Images/contact.jpeg");
+}
+.paraMain img {
+	width: 50%;
+	height: auto;
+}
+.paraInnerMain {
+	padding-top: 5%;
+	padding-bottom: 20%;
+}
+.paraInner {
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+
+
+/*Grid*/
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+    padding: 0px;
+}
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+
+/*nav*/
+#nav ul{
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+	background-color: #5E534E;
+}
+#nav li:not(.promo) {
+	float: left;
+}
+#nav li a {
+	text-decoration: none;
+	color: #c0bbab;
+	padding: 14px 16px;
+	display: block;
+	text-align: center;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+#nav li a:hover:not(.promo) {
+	color: #FFF;
+}
+/*text*/
+.textBoxSer, .textBoxLoc, .textBoxCon {
+	background-color: #80716a;
+	padding: 20px;
+}
+.title {
+	text-align: center;
+	padding: 10px;
+	font-family: Tahoma;
+	color: #f0EAD6;
+	font-size: 200%;
+	letter-spacing: 1%;
+}
+
+/*Location*/
+.map {
+	width: 100%;
+	height: 75%;
+}
+
+.street {
+	width: 100%;
+	height: auto;
+}
+
+/*List Styles*/
+#times ul {
+	list-style-type: none;
+	background-color: #1F282D;
+	border-radius: 5px;
+}
+#times li {
+	text-align: center;
+	padding: 10px;
+	color: #a6a89c;
+	font-size: 150%;
+	font-family: Tahoma;
+}
+
+
+
+.arrow {
+	float: right;
+}
+/*Tabs*/
+.tabBH, .tabBF, .tabBT, .tabBS, .tabBI {
+    background-color: #CDCDC0;
+    color: #4A4444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+		font-size: 75%;
+}
+
+.tabBH.active, .tabBF.active, .tabBT.active, .tabBS.active, .tabBI.active, .tabBH.hover, .tabBF.hover, .tabBT.hover, .tabBS.hover, .tabTI.active, {
+    color: #fff;
+}
+.tabTH, .tabTF, .tabTT, .tabTS, .tabTI {
+	display: none;
+	padding: 15px;
+}
+
+.revRow {
+	margin: 5px;
+}
+
+.card {
+  width: 500px; /*best to have the width at a constant size*/
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); /*repeating the dementions and rgba() creates a fade effect*/
+  text-align: center;
+	margin: 10px;
+	font-family: Tahoma;
+}
+.cardL {
+	width: 800px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	text-align: center;
+	margin: 10px;
+	font-family: Tahoma;
+}
+.cardRev {
+	width: 250px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	text-align: center;
+	margin: 10px;
+	font-family: Tahoma;
+}
+.cardH {
+  background-color: #1F282D;
+  color: #fff;
+  padding: 10px;
+  font-size: 150%;
+}
+.subTXT {
+  padding: 10px;
+	background-color: #CDCDC0;
+	color: #4A4444;
+}
+.subTXT ul {
+	list-style-type: none;
+	border-radius: 5px;
+}
+.subTXT li {
+	text-align: center;
+	padding: 10px;
+	font-size: 150%;
+	font-family: Tahoma;
+}
+.subTXT #timesSoc ul {
+	list-style-type: none;
+	border-radius: 5px;
+	text-align: center;
+	padding: 10px;
+}
+.subTXT #timesSoc li {
+	padding: 10px;
+	color: #a6a89c;
+	font-size: 150%;
+	font-family: tahoma;
+	display: inline;
+}
+
+/*for icons*/
+#timesSoc li a {
+	text-decoration: none;
+	color: #3b5998;
+	transition: color 0.5 ease-in-out;
+}
+#timesSoc li a:hover {
+	color: #1F282D;;
+}
+
+/*Reviews*/
+.star {
+	color: #f7b50c;
+}
+.rev {
+	text-align: center;
+	margin: 10px;
+	font-family: Tahoma;
+	color: #CDCDC0;
+	background-color: #1F282D;
+	padding: 7px;
+	border-radius: 5px;
+}
+.rev h3 {
+	font-style: bold;
+	font-size: 150%;
+}
+.rev p {
+	font-size: 120%;
+}
+.name {
+	font-style: italic;
+	font-size: 120%;
+}
+
+
+/*Forms*/
+.label {
+	font-size: 150%;
+	color: #a6a89c;
+	font-family: Tahoma;
+}
+.panelF {
+	background-color: #1F282D;
+	padding: 10px;
+	border-radius: 5px;
+}
+.input {
+	border-radius: 3px;
+}
+.inputText {
+	border-radius: 3px;
+}
+textarea {
+	width: 75%;
+	height: 15%;
+}
+.button {
+	padding: 10px;
+	border-radius: 3px;
+	background-color: #3b5998;
+	font-size: 110%;
+	color: #CDCDC0;
+}
+.button:hover {
+	background-color: #a6a89c;
+}
+/*Footer*/
+.footer {
+	padding: 10px;
+	background-color: #5E534E;
+}
+.titleFoot {
+	text-align: center;
+	padding: 10px;
+	font-family: Tahoma;
+	color: #f0EAD6;
+	font-size: 110%;
+	letter-spacing: 1%;
+}
+.titleFootPromo {
+	text-align: center;
+	padding: 10px;
+	font-family: Tahoma;
+	color: #f0EAD6;
+	letter-spacing: 1%;
+}
+#footNav ul {
+	overflow: hidden;
+	padding: 0;
+	margin: 0px;
+	list-style-type: none;
+}
+#footNav li {
+	display: inline;
+	padding: 10px;
+	font-size: 130%
+}
+#footNav li a {
+	text-decoration: none;
+	color: #a6a89c;
+	padding: 14px 16px;
+}
+#footNav li a:hover {
+	color: #D1D3C3;
+}
+
+.slideshow-container {
+  max-width: 750px;
+  position: relative;
+  margin: auto;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+@media only screen and (max-width: 320px) {
+	.paraMain {
+		height: 50%;
+	}
+}
+@media only screen and (max-width: 800px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+	.paraMain, .paraCon, .paraLoc, .paraSer {
+		background-attachment: local;
+	}
+	.paraInner {
+		padding-top: 40%;
+		padding-bottom: 20%;
+	}
+	.paraMain img {
+		width: 75%;
+		height: auto;
+	}
+	#nav ul {
+		background-color: #4A4444;
+	}
+	.map {
+		width: 100%;
+		height: auto;
+	}
+	.mapCon {
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+	.street {
+		width: 100%;
+		height: auto;
+	}
+	.subTXT li .emailT {
+		font-size: 14pt;
+	}
+	.card {
+		width: 300px;
+	}
+	.cardL {
+		width: 300px;
+		margin: 10px;
+	}
+	.cardRev {
+		width: 300px;
+	}
+	.tabBH, .tabBF, .tabBT, .tabBS, .tabBI {
+		font-size: 50%;
+	}
+}
